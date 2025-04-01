@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+RewriteBase /
+RewriteRule ^not_found?$ index.php?m=not_found [L]
+RewriteRule ^/?$ index.php?m=home [L]
+RewriteRule ^admin/change_password?$ index.php?m=change_password [L]
+RewriteRule ^admin/change_password/?$ index.php?m=change_password [L]
+RewriteRule ^admin/settings?$ index.php?m=settings [L]
+RewriteRule ^admin/settings/?$ index.php?m=settings [L]
+RewriteRule ^login?$ index.php?m=login [L]
+RewriteRule ^login/?$ index.php?m=login [L]
+RewriteRule ^admin/invoices/?$ index.php?m=invoices [L]
+RewriteRule ^admin/invoices?$ index.php?m=invoices [L]
+RewriteRule ^new?$ index.php?m=add [L]
+RewriteRule ^new/?$ index.php?m=add [L]
+RewriteRule ^admin/dashboard?$ index.php?m=dashboard [L]
+RewriteRule ^admin/dashboard/?$ index.php?m=dashboard [L]
+RewriteRule ^admin?$ index.php?m=dashboard [L]
+RewriteRule ^admin/?$ index.php?m=dashboard [L]
+RewriteRule ^logout?$ index.php?m=logout [L]
+RewriteRule ^i/(.*)?$ index.php?m=invoice&id=$1 [L]
+RewriteRule ^invoice/(.*)?$ index.php?m=invoice&id=$1 [L]
+
+RewriteRule ^install?$ install.php [L]
+
+</IfModule>
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+

@@ -1,0 +1,101 @@
+/* Invoice view */
+body{
+    background: #FFF;
+}
+.invoice-body{
+    background: transparent;
+}
+.ui.grid.invoice-receipt{
+    max-width: 800px;
+    margin: 0 auto !important;
+    color: #424242;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+.invoice-receipt h2.ui.header{
+    font-size: 1rem;
+    margin: 0 !important;
+}
+.invoice-header{
+    color: #383c4a;
+}
+.invoice-receipt ul{
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 0 !important;
+}
+.invoice-sub-header h1.ui.header{
+    margin: 0 !important;
+    text-align: left !important;
+}
+.invoice-receipt .column:first-child{
+    padding-left: 0 !important;
+    padding-right: 3% !important;
+}
+.invoice-receipt .column:last-child{
+    padding-right: 0 !important;
+    padding-left: 3% !important;
+}
+.invoice-sub-header{
+    margin-top: 40px !important;
+}
+.invoice-products{
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    padding: 35px 0 !important;
+    margin-bottom: 30px !important;
+}
+.invoice-sub-header .column:first-child{
+    vertical-align: middle !important;
+}
+.invoice-receipt h4{
+    margin-top: 0 !important;
+}
+.invoice-footer a{
+    color: #888;
+}
+.invoice-footer a i{
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -3px;
+}
+.custom-details {
+    display: block;
+    overflow: hidden;
+}
+.custom-details.edit {
+    outline: 2px dotted #999;
+}
+.custom-info {
+    background: #eee;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    display: block;
+    font-size: 14px;
+    line-height: 1.1;
+    margin: 10px 0;
+    padding: 10px;
+}
+.custom-info strong {
+    border-bottom: 1px solid #ccc;
+    display: block;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.custom-info .icon {
+    opacity: 1;
+}
+.custom-details.edit:hover,
+.custom-details.edit:focus {
+    outline: 2px dotted #00B040;
+}
+@media print {
+    .custom-info {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    .custom-details {
+        outline: none !important;
+    }
+}
+/* End invoice view */
